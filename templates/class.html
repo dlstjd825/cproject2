@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HobbyHive - 클래스</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/class.css') }}">
+</head>
+<body>
+    <!-- 사이드바 -->
+    <!-- 사이드바 -->
+    <div class="sidebar">
+        <div>
+            <!-- 로고 -->
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo2.png') }}" alt="HobbyHive Logo">
+                <span style="font-size: 24px; font-weight: bold;">HOBBYHIVE</span>
+            </div>
+
+            <!-- 검색창 -->
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="관심 있는 취미를 검색하세요.">
+                <button class="search-btn" onclick="performSearch()">검색</button>
+            </div>
+            
+            <!-- 네비게이션 버튼 -->
+            <div class="nav-buttons">
+                <button class="now" onclick="window.location.href='/class_page'" style="font-size: 19px">클래스</button>
+                <button onclick="window.location.href='/main'" style="font-size: 19px">커뮤니티</button>
+                <button onclick="window.location.href='/mypage'" style="font-size: 19px">마이페이지</button>
+            </div>
+        </div>
+        <!-- 로그아웃 버튼 -->
+        <a href="{{ url_for('user_logout') }}" class="logout-btn">로그아웃</a>
+    </div>
+    
+    <!-- 클래스 섹션 -->
+    <div class="content-wrapper">
+        <div id="class" class="section active">
+            <h1>클래스</h1>
+            <!-- 클래스 생성 버튼 -->
+            <button onclick="window.location.href='/create_class'" style="border: none; font-size: 24px; padding: 15px 30px; margin-bottom: 20px; border-radius: 10px;">클래스 생성하기</button>
+            <div class="grid-container">
+                {% if classes %}
+                    {% for course in classes %}
+                    <a href="/class_details/{{ course.class_title }}" style="text-decoration: none; color: inherit;">
+                        <div class="grid-item">
+                            <img src="{{ url_for('static', filename=course.image_path) }}" alt="클래스 이미지">
+                            <p clsss="grid-title">{{ course.class_title }}</p>
+                            <p>멘토: {{ course.mento_name }}</p>
+                            <p>현재 신청 인원 : {{ course.current_applicants }} / {{ course.capacity }}</p>
+                        </div>
+                    </a>
+                    {% endfor %}
+                {% else %}
+                    <p>현재 이용 가능한 클래스가 없습니다.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            // URL 파라미터에서 success_message와 error를 가져옵니다
+            var urlParams = new URLSearchParams(window.location.search);
+            var successMessage = urlParams.get('success_message');
+            var errorMessage = urlParams.get('error');
+    
+            // success_message가 있으면 팝업 띄우기
+            if (successMessage) {
+                alert(decodeURIComponent(successMessage));  // success_message를 URL 디코딩해서 팝업
+            }
+    
+            // error가 있으면 에러 메시지 팝업
+            if (errorMessage) {
+                alert(decodeURIComponent(errorMessage));  // error 메시지를 URL 디코딩해서 팝업
+            }
+        }
+    </script>
+    
+</body>
+</html>
