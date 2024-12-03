@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\korea\\Desktop\\HOBBYHIVE\\c_function\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D2ECBD27-AA3C-4AF8-A7F8-F5DA34068DFC}|C_function.vcxproj|C:\\Users\\korea\\Desktop\\HOBBYHIVE\\c_function\\is_user_mentor.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D2ECBD27-AA3C-4AF8-A7F8-F5DA34068DFC}|C_function.vcxproj|solutionrelative:is_user_mentor.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2ECBD27-AA3C-4AF8-A7F8-F5DA34068DFC}|C_function.vcxproj|C:\\Users\\korea\\Desktop\\HOBBYHIVE\\c_function\\load_class_details.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D2ECBD27-AA3C-4AF8-A7F8-F5DA34068DFC}|C_function.vcxproj|solutionrelative:load_class_details.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2ECBD27-AA3C-4AF8-A7F8-F5DA34068DFC}|C_function.vcxproj|C:\\Users\\korea\\Desktop\\HOBBYHIVE\\c_function\\change_id.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D2ECBD27-AA3C-4AF8-A7F8-F5DA34068DFC}|C_function.vcxproj|solutionrelative:change_id.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2ECBD27-AA3C-4AF8-A7F8-F5DA34068DFC}|C_function.vcxproj|C:\\Users\\korea\\Desktop\\HOBBYHIVE\\c_function\\apply_class_in_c.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D2ECBD27-AA3C-4AF8-A7F8-F5DA34068DFC}|C_function.vcxproj|solutionrelative:apply_class_in_c.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "is_user_mentor.c",
+              "DocumentMoniker": "C:\\Users\\korea\\Desktop\\HOBBYHIVE\\c_function\\is_user_mentor.c",
+              "RelativeDocumentMoniker": "is_user_mentor.c",
+              "ToolTip": "C:\\Users\\korea\\Desktop\\HOBBYHIVE\\c_function\\is_user_mentor.c",
+              "RelativeToolTip": "is_user_mentor.c",
+              "ViewState": "AgIAAAsAAAAAAAAAAADwvxoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-12-03T06:40:09.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "load_class_details.c",
+              "DocumentMoniker": "C:\\Users\\korea\\Desktop\\HOBBYHIVE\\c_function\\load_class_details.c",
+              "RelativeDocumentMoniker": "load_class_details.c",
+              "ToolTip": "C:\\Users\\korea\\Desktop\\HOBBYHIVE\\c_function\\load_class_details.c",
+              "RelativeToolTip": "load_class_details.c",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-12-02T03:17:16.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "change_id.c",
+              "DocumentMoniker": "C:\\Users\\korea\\Desktop\\HOBBYHIVE\\c_function\\change_id.c",
+              "RelativeDocumentMoniker": "change_id.c",
+              "ToolTip": "C:\\Users\\korea\\Desktop\\HOBBYHIVE\\c_function\\change_id.c",
+              "RelativeToolTip": "change_id.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-11-30T15:15:44.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "apply_class_in_c.c",
+              "DocumentMoniker": "C:\\Users\\korea\\Desktop\\HOBBYHIVE\\c_function\\apply_class_in_c.c",
+              "RelativeDocumentMoniker": "apply_class_in_c.c",
+              "ToolTip": "C:\\Users\\korea\\Desktop\\HOBBYHIVE\\c_function\\apply_class_in_c.c",
+              "RelativeToolTip": "apply_class_in_c.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-11-27T09:20:39.128Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

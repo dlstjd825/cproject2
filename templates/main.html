@@ -1,0 +1,82 @@
+<!-- 메인화면 == 커뮤니티 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HobbyHive Layout</title>
+    <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+    <!-- 메시지 팝업 -->
+    {% if success_message %}
+    <script>
+        alert("{{ success_message }}");
+    </script>
+    {% endif %}
+    
+    <!-- 메인 레이아웃 -->
+    <div class="main">
+        <!-- 사이드바 -->
+        <div class="sidebar">
+            <div>
+                <!-- 로고 -->
+                <div class="logo">
+                    <img src="static/images/logo/logo2.png" alt="HobbyHive Logo">
+                    <span style="font-size: 24px; font-weight: bold;">HOBBYHIVE</span>
+                </div>
+
+                <!-- 검색창 -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="관심 있는 취미를 검색하세요.">
+                    <button class="search-btn" onclick="performSearch()">검색</button>
+                </div>
+                
+                <!-- 네비게이션 버튼 -->
+                <div class="nav-buttons">
+                    <button onclick="window.location.href='/class_page'" style="font-size: 19px">클래스</button>
+                    <button class="now" onclick="window.location.href='/main'" style="font-size: 19px">커뮤니티</button>
+                    <button onclick="window.location.href='/mypage'" style="font-size: 19px">마이페이지</button>
+                </div>
+                
+            </div>
+
+            <!-- 로그아웃 버튼 -->
+            <a href="{{ url_for('user_logout') }}" class="logout-btn">로그아웃</a>
+
+
+        </div>
+
+        <div class="content-wrapper">
+            <!-- 커뮤니티 섹션 -->
+            <div id="community" class="section">
+                <div class="content">
+                    <a href="page1.html"><img src="https://via.placeholder.com/300x300" alt="이미지 1"></a>
+                    <a href="page2.html"><img src="https://via.placeholder.com/300x300" alt="이미지 2"></a>
+                    <a href="page3.html"><img src="https://via.placeholder.com/300x300" alt="이미지 3"></a>
+                    <a href="page4.html"><img src="https://via.placeholder.com/300x300" alt="이미지 4"></a>
+                    <a href="page5.html"><img src="https://via.placeholder.com/300x300" alt="이미지 5"></a>
+                    <a href="page6.html"><img src="https://via.placeholder.com/300x300" alt="이미지 6"></a>
+                    <a href="page7.html"><img src="https://via.placeholder.com/300x300" alt="이미지 7"></a>
+                    <a href="page8.html"><img src="https://via.placeholder.com/300x300" alt="이미지 8"></a>
+                    <a href="page5.html"><img src="https://via.placeholder.com/300x300" alt="이미지 9"></a>
+                    <a href="page6.html"><img src="https://via.placeholder.com/300x300" alt="이미지 10"></a>
+                    <a href="page7.html"><img src="https://via.placeholder.com/300x300" alt="이미지 11"></a>
+                    <a href="page8.html"><img src="https://via.placeholder.com/300x300" alt="이미지 12"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript: 버튼 활성화, 검색 기능 -->
+    <script>
+        function performSearch() {
+        const query = document.querySelector('.search-input').value;
+        if (query) 
+            alert(`'${query}' 검색 결과입니다.`);
+        else 
+            alert('검색어를 입력하세요.');
+        }
+    </script>
+</body>
+</html>
